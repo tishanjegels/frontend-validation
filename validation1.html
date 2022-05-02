@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Campatible" content="IE-edge">
+    <title>Validation1</title>
+    <link rel="stylesheet" type="text/css" href="CSS\stylesheet.css">
+</head>
+
+<body>
+
+    <h1 class="heading">Form</h1>
+
+    <form action="#" onsubmit="myValidation()">
+
+
+        <label for="newtask">New Task:</label>
+        <input type="text" id="newtask" name="newtask" placeholder="required and must contain no html characters"
+            style="width: 350px;" required>
+
+
+        <p id="error">Please make sure your task contains no HTML characters html</p>
+        <br>
+        <br>
+        <label for="description">Task description : </label>
+        <input type="text" id="description" name="description" placeholder="optional"
+            style="width: 350px; height: 60px;">
+
+        <br>
+        <br>
+
+        <label for="due-date">Task due date:</label>
+        <input type="date" id="due-date" name="due-date" placeholder="required and must select a date"
+            style="width: 200px;" required>
+
+        <br>
+        <br>
+        <label for="due-time">Set Task due time:</label>
+        <input type="time" id="due-time" name="due-time" placeholder="required and must select a time"
+            style="width: 100px;" required>
+        <br>
+
+        <br> <input type="submit" value="submit">
+    </form>
+    
+    <ul id="myTaskList"></ul>
+
+    <script type="text/javascript" src="JS\script.js">
+
+    </script>
+</body>
+
+</html>
